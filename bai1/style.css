@@ -1,0 +1,23 @@
+#basicTimeline > .line > .square{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#basicTimeline > .line > .circle{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 3em;
+    margin-top: 20px;
+}
+
+#basicTimeline > .line > .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    margin-top: 20px;
+}

@@ -1,0 +1,87 @@
+body{
+    background-color: #111116;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#d1 > .square {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-top: 250px;
+}
+
+#d2 > .square {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+#d3 > .square{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+#d4 > .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 4px;
+    display: inline-block;
+}
+
+#d4 > .red {
+    background-color: red
+}
+
+#d4 > .blue {
+    background-color: blue
+}
+
+#d4 > .green {
+    background-color: green
+}
+
+#d4 > .yellow {
+    background-color: yellow
+}
+
+
+#d5 > .square{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-top: 250px;
+}
+
+/*#d3 > .line > .square {*/
+/*background-color: blue;*/
+/*width: 500px;*/
+/*height: 200px;*/
+/*padding: 1px;*/
+/*margin-top: 50px;*/
+/*}*/
+
+/*#d4 > .square {*/
+/*background-color: green;*/
+/*width: 500px;*/
+/*height: 500px;*/
+/*padding: 1px;*/
+/*margin-top: 10%;*/
+/*}*/
+
+/*#d5 > .line > .square {*/
+/*background-color: blue;*/
+/*width: 100px;*/
+/*height: 100px;*/
+/*margin-top: 10%;*/
+/*}*/
+
+/*#d6 > .line > .square {*/
+/*background-color: blue;*/
+/*width: 100px;*/
+/*height: 100px;*/
+/*margin-top: 10%;*/
+/*}*/
