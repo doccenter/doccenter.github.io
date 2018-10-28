@@ -32,9 +32,9 @@ $(document).ready(function () {
         })
         .add({
             targets: '#d2 .el',
-            translateX: 250,
+            translateX: 700,
             easing: [.91, -0.54, .29, 1.56],
-            duration: 5000,
+            duration: 2000,
             complete: function () {
                 elShow($('#d3'));
             }
@@ -43,7 +43,7 @@ $(document).ready(function () {
             targets: '#d3 .square',
             translateY: {
                 value: 200,
-                duration: 5000
+                duration: 10000
             },
             rotate: {
                 value: 360,
@@ -61,18 +61,18 @@ $(document).ready(function () {
         })
         .add({
             targets: '#d4 .square',
-            scale: 2,
-            duration: 6000,
-            easing: 'linear',
+            translateX: 700,
+            easing: [.91, -0.54, .29, 1.56],
+            duration: 2000,
             complete: function () {
                 elShow($('#d5'));
             }
         })
         .add({
-            targets: '#d4 .box',
+            targets: '#d5 .phanloaidanhtu',
             translateY: [
-                {value: 400, duration: 1500},
-                {value: 0, duration: 1800}
+                {value: 600, duration: 1000},
+                {value: 0, duration: 5000}
             ],
             rotate: {
                 value: '1turn',
@@ -87,47 +87,43 @@ $(document).ready(function () {
         })
         .add({
             targets: '#d6 .square',
-            scale: 2,
-            translateX: [
-                {value: '0', duration: 1000},
-                {value: '600px', duration: 1500}
-            ],
-            duration: 2000,
-            easing: 'easeInOutSine',
+            translateY: {
+                value: 200,
+                duration: 30000
+            },
+            rotate: {
+                value: 360,
+                duration: 1800,
+                easing: 'easeInOutSine'
+            },
+            scale: {
+                value: 2,
+                duration: 1600,
+                easing: 'easeInOutQuart'
+            },
+            complete: function () {
+                elShow($('#d7'));
+            }
         })
-    // .add({
-    //     targets: '#d4 .el',
-    //     translateX: [300, 1000],
-    //     direction: 'alternate',
-    //     duration: 5000,
-    //     complete: function () {
-    //         elShow($('#d5'));
-    //     }
-    // }).add({
-    // targets: '#d5 .el',
-    // translateX: function (el) {
-    //     return el.getAttribute('data-x');
-    // },
-    // translateY: function (el, i) {
-    //     return 50 + (-50 * i);
-    // },
-    // scale: function (el, i, l) {
-    //     return (l - i) + .25;
-    // },
-    // rotate: function () {
-    //     return anime.random(-360, 360);
-    // },
-    // duration: function () {
-    //     return anime.random(1200, 1800);
-    // },
-    // duration: function () {
-    //     return anime.random(800, 1600);
-    // },
-    // delay: function () {
-    //     return anime.random(0, 1000);
-    // },
-    // direction: 'alternate',
-    // loop: true
-    // });
-    // basicTimeline.loop = true;
+        .add({
+            targets: '#d7 .square',
+            translateY: {
+                value: 200,
+                duration: 30000
+            },
+            rotate: {
+                value: 360,
+                duration: 1800,
+                easing: 'easeInOutSine'
+            },
+            scale: {
+                value: 2,
+                duration: 1600,
+                easing: 'easeInOutQuart'
+            },
+            complete: function () {
+                elShow($('#d8'));
+            }
+        })
+
 });
